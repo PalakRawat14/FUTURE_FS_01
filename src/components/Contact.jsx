@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { personalInfo } from "../data/portfolioData";
 import { FiMail, FiMapPin, FiLinkedin, FiGithub, FiSend, FiArrowUpRight } from "react-icons/fi";
+import emailjs from "@emailjs/browser";
 import "./Contact.css";
 
 const initialForm = { name: "", email: "", subject: "", message: "" };
@@ -9,6 +10,7 @@ export default function Contact() {
   const [form, setForm] = useState(initialForm);
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
 
   function validate() {
     const errs = {};
@@ -35,14 +37,33 @@ export default function Contact() {
     }
   }
 
-  function handleSubmit(e) {
+  async function handleSubmit(e) {
     e.preventDefault();
     const errs = validate();
     if (Object.keys(errs).length > 0) {
       setErrors(errs);
       return;
     }
-    setSubmitted(true);
+    setSending(true);
+    try {
+      await emailjs.send(
+        personalInfo.emailjs_serviceId,
+        personalInfo.emailjs_templateId,
+        {
+          from_name: form.name,
+          from_email: form.email,
+          subject: form.subject,
+          message: form.message,
+          to_email: personalInfo.email,
+        },
+        personalInfo.emailjs_publicKey
+      );
+      setSubmitted(true);
+    } catch {
+      alert("Failed to send. Check your EmailJS config in portfolioData.js");
+    } finally {
+      setSending(false);
+    }
   }
 
   function handleReset() {
@@ -107,8 +128,8 @@ export default function Contact() {
             {submitted ? (
               <div className="contact-success">
                 <FiSend className="success-icon" />
-                <h3>Thank you!</h3>
-                <p>Your message has been prepared.</p>
+                <h3>Message Sent!</h3>
+                <p>Thanks, I'll get back to you soon.</p>
                 <button type="button" className="btn btn-primary" onClick={handleReset}>
                   Send Another Message
                 </button>
@@ -153,9 +174,9 @@ export default function Contact() {
                   ></textarea>
                   {errors.message && <span id="message-error" className="form-error" role="alert">{errors.message}</span>}
                 </div>
-                <button type="submit" className="btn btn-primary contact-submit-btn">
+                <button type="submit" className="btn btn-primary contact-submit-btn" disabled={sending}>
                   <FiSend />
-                  Send Message
+                  {sending ? "Sending..." : "Send Message"}
                 </button>
               </>
             )}
