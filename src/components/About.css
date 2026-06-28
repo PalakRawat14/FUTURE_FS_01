@@ -1,0 +1,141 @@
+.about {
+  --accent: var(--about-accent);
+  --accent-hover: var(--about-accent-hover);
+  --accent-fill: var(--about-accent-fill);
+  --border-accent: var(--about-border-accent);
+  --glow: var(--about-glow);
+  background: var(--bg-secondary);
+  background-image: radial-gradient(ellipse at 20% 80%, rgba(167, 139, 250, 0.04) 0%, transparent 60%);
+}
+
+.about-header {
+  margin-bottom: 3rem;
+}
+
+.about-content {
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+  align-items: center;
+}
+
+.about-left {
+  display: flex;
+  justify-content: center;
+}
+
+.about-stats-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  width: 100%;
+  max-width: 380px;
+}
+
+.about-stat-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.about-stat-number {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 400;
+}
+
+.about-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-highlight {
+  color: var(--text-primary);
+  font-size: 1.05rem;
+  line-height: 1.9;
+  margin-bottom: 1.25rem;
+  font-weight: 500;
+}
+
+.about-text {
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+  line-height: 1.9;
+  margin-bottom: 1.5rem;
+}
+
+.about-info-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  margin-bottom: 2rem;
+}
+
+.about-info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.about-info-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: var(--accent-fill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+  font-size: 0.95rem;
+  flex-shrink: 0;
+}
+
+.about-info-item div:last-child {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-info-label {
+  font-size: 0.688rem;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.about-info-value {
+  font-size: 0.95rem;
+  color: var(--text-primary);
+}
+
+.about-resume-btn {
+  align-self: flex-start;
+}
+
+@media (max-width: 900px) {
+  .about-content {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+
+  .about-left {
+    order: -1;
+  }
+
+  .about-stats-grid {
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,117 @@
+.education {
+  --accent: var(--education-accent);
+  --accent-hover: var(--education-accent-hover);
+  --accent-fill: var(--education-accent-fill);
+  --border-accent: var(--education-border-accent);
+  --glow: var(--education-glow);
+  background: var(--bg-primary);
+  background-image: radial-gradient(ellipse at 70% 30%, rgba(244, 114, 182, 0.04) 0%, transparent 60%);
+}
+
+.education-header {
+  margin-bottom: 3rem;
+}
+
+.edu-timeline-item {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1.25rem;
+}
+
+.edu-timeline-item::before {
+  content: "";
+  position: absolute;
+  left: 7px;
+  top: 28px;
+  bottom: -1.25rem;
+  width: 2px;
+  background: var(--border);
+}
+
+.edu-timeline-item:last-child::before {
+  display: none;
+}
+
+.edu-timeline-dot {
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--accent);
+  border: 3px solid var(--bg-primary);
+  z-index: 1;
+}
+
+.edu-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.edu-icon-wrap {
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background: var(--accent-fill);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.edu-icon {
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+.edu-body {
+  flex: 1;
+}
+
+.edu-year {
+  display: inline-block;
+  font-size: 0.75rem;
+  color: var(--accent);
+  font-weight: 600;
+  background: var(--accent-fill);
+  padding: 0.2rem 0.7rem;
+  border-radius: 6px;
+  margin-bottom: 0.4rem;
+}
+
+.edu-degree {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin: 0 0 0.2rem;
+}
+
+.edu-institution {
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+.edu-cgpa-value {
+  font-size: 0.85rem;
+  color: var(--accent);
+  font-weight: 500;
+  white-space: nowrap;
+  padding: 0.3rem 0.8rem;
+  background: var(--accent-fill);
+  border-radius: 6px;
+}
+
+@media (max-width: 600px) {
+  .edu-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.75rem;
+  }
+}

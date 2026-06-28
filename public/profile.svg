@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="500" viewBox="0 0 400 500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e1b4b"/>
+      <stop offset="100%" stop-color="#0f0a2a"/>
+    </linearGradient>
+    <linearGradient id="text" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+  </defs>
+  <rect width="400" height="500" fill="url(#bg)" rx="20"/>
+  <circle cx="200" cy="200" r="100" fill="none" stroke="url(#text)" stroke-width="3" opacity="0.3"/>
+  <circle cx="200" cy="200" r="90" fill="rgba(139,92,246,0.08)"/>
+  <text x="200" y="218" font-family="Inter, sans-serif" font-size="72" font-weight="700" fill="url(#text)" text-anchor="middle">PR</text>
+</svg>

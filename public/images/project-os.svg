@@ -1,0 +1,29 @@
+<svg viewBox="0 0 400 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="400" height="240" fill="#1A2332"/>
+  <rect x="25" y="30" width="350" height="180" rx="10" stroke="#F59E0B" stroke-width="2" fill="none" opacity="0.4"/>
+  <rect x="50" y="50" width="300" height="42" rx="6" fill="#0B1120" stroke="#334155" stroke-width="1.5"/>
+  <text x="62" y="62" font-family="monospace" font-size="8" fill="#64748B">Ready Queue</text>
+  <rect x="65" y="70" width="52" height="16" rx="4" fill="#EF4444" opacity="0.5"/>
+  <text x="78" y="82" font-family="monospace" font-size="8" fill="#fff" font-weight="600">P1</text>
+  <rect x="125" y="70" width="52" height="16" rx="4" fill="#F59E0B" opacity="0.6"/>
+  <text x="138" y="82" font-family="monospace" font-size="8" fill="#fff" font-weight="600">P2</text>
+  <rect x="185" y="70" width="52" height="16" rx="4" fill="#60A5FA" opacity="0.5"/>
+  <text x="198" y="82" font-family="monospace" font-size="8" fill="#fff" font-weight="600">P3</text>
+  <rect x="245" y="70" width="52" height="16" rx="4" fill="#A78BFA" opacity="0.5"/>
+  <text x="258" y="82" font-family="monospace" font-size="8" fill="#fff" font-weight="600">P4</text>
+  <rect x="50" y="105" width="300" height="42" rx="6" fill="#0B1120" stroke="#334155" stroke-width="1.5"/>
+  <text x="62" y="117" font-family="monospace" font-size="8" fill="#64748B">CPU (Running)</text>
+  <rect x="120" y="122" width="80" height="20" rx="4" fill="#34D399" opacity="0.6"/>
+  <text x="138" y="136" font-family="monospace" font-size="9" fill="#fff" font-weight="600">P1 (SJF)</text>
+  <rect x="50" y="160" width="300" height="38" rx="6" fill="#0B1120" stroke="#334155" stroke-width="1.5"/>
+  <text x="62" y="172" font-family="monospace" font-size="8" fill="#64748B">Scheduling</text>
+  <rect x="70" y="178" width="50" height="14" rx="3" fill="#F59E0B" opacity="0.3"/>
+  <text x="78" y="189" font-family="monospace" font-size="7" fill="#F59E0B">SJF</text>
+  <rect x="130" y="178" width="50" height="14" rx="3" fill="#60A5FA" opacity="0.3"/>
+  <text x="138" y="189" font-family="monospace" font-size="7" fill="#60A5FA">RR</text>
+  <rect x="190" y="178" width="60" height="14" rx="3" fill="#A78BFA" opacity="0.3"/>
+  <text x="198" y="189" font-family="monospace" font-size="7" fill="#A78BFA">Lottery</text>
+  <rect x="55" y="55" width="6" height="6" rx="3" fill="#34D399" opacity="0.8"/>
+  <rect x="55" y="110" width="6" height="6" rx="3" fill="#EF4444" opacity="0.8"/>
+  <rect x="55" y="165" width="6" height="6" rx="3" fill="#F59E0B" opacity="0.8"/>
+</svg>
