@@ -1,147 +1,152 @@
-# Personal Professional Portfolio Website
+# 💼 Personal Professional Portfolio Website
 
-**Internship Track:** Full Stack Web Development  
-**Repository Name:** FUTURE_FS_01  
-**Author:** Palak Rawat  
+> **Internship Track:** Full Stack Web Development
+> **Repository:** `FUTURE_FS_01`
+> **Author:** **Palak Rawat**
 
----
-
-## Objective
-
-Build a responsive, modern, and professional personal portfolio website using React and Vite to showcase skills, projects, education, certifications, and contact information — ready for internship submission and live deployment.
+A modern, responsive, and professional personal portfolio website built using **React** and **Vite** to showcase my skills, projects, education, certifications, and contact information. This project is designed for internship submission and is fully deployment-ready.
 
 ---
 
-## Features
+## 🚀 Live Demo
 
-- Responsive design (desktop, tablet, mobile)
-- Fixed glassmorphism navbar with smooth scrolling and mobile hamburger menu
-- Hero section with gradient name text, animated avatar, and stat cards
-- About section with glassmorphism cards and personal details
-- Skills section with categorized cards and technology icons (react-icons)
-- Projects section with glassmorphism cards, image placeholders, and GitHub links
-- Education card with icon and professional layout
-- Certifications cards with themed icons (AWS, Google Cloud, etc.)
-- Contact form with client-side validation and success feedback
-- Download Resume button
-- Scroll-to-top button
-- Purple/blue gradient accent color scheme on dark navy background
-- Active section highlighting in navbar with underline effect
-- SEO-friendly meta tags and semantic HTML
-- Accessibility support (aria labels, focus-visible, semantic structure)
-- CSS animations and transitions throughout
-- Ready for deployment on Vercel / Netlify
+🌐 **Portfolio:** https://future-fs-01-three-orpin.vercel.app/
 
 ---
 
-## Tech Stack
+## ✨ Features
 
-| Technology | Purpose |
-|---|---|
-| React 19 | UI library |
-| Vite 8 | Build tool and dev server |
-| JavaScript (JSX) | Language |
-| Plain CSS | Styling (no frameworks) |
-| react-icons | Technology icons for skills and sections |
-| Google Fonts (Inter) | Typography |
+* 📱 Fully responsive design (Desktop, Tablet & Mobile)
+* 🎨 Modern Glassmorphism UI
+* 🧭 Fixed navigation bar with smooth scrolling
+* 🍔 Mobile hamburger menu
+* 👩 Hero section with animated avatar and statistics
+* 👤 About section with professional profile
+* 💻 Skills section with categorized technologies
+* 🚀 Projects showcase with GitHub links
+* 🎓 Education section
+* 📜 Certifications section
+* 📩 Contact form with client-side validation
+* 📄 Resume download button
+* ⬆️ Scroll-to-top button
+* 🌈 Purple & Blue gradient theme
+* 🎯 Active navigation highlighting
+* ♿ Accessibility-friendly design
+* 🔍 SEO-friendly HTML structure
+* ⚡ Smooth animations and transitions
+* ☁️ Ready for deployment on Vercel or Netlify
 
 ---
 
-## Folder Structure
+## 🛠 Tech Stack
 
-```
+| Technology           | Purpose              |
+| -------------------- | -------------------- |
+| React 19             | Frontend Library     |
+| Vite                 | Build Tool           |
+| JavaScript (JSX)     | Programming Language |
+| CSS3                 | Styling              |
+| React Icons          | Icons                |
+| Google Fonts (Inter) | Typography           |
+
+---
+
+## 📂 Folder Structure
+
+```text
 FUTURE_FS_01/
 ├── public/
 │   ├── favicon.svg
-│   └── Palak_Rawat_Resume.pdf    ← Add your resume here
+│   └── Palak_Rawat_Resume.pdf
+│
 ├── src/
 │   ├── components/
-│   │   ├── Navbar.jsx / .css
-│   │   ├── Hero.jsx / .css
-│   │   ├── About.jsx / .css
-│   │   ├── Skills.jsx / .css
-│   │   ├── Projects.jsx / .css
-│   │   ├── Education.jsx / .css
-│   │   ├── Certifications.jsx / .css
-│   │   ├── Contact.jsx / .css
-│   │   ├── Footer.jsx / .css
-│   │   └── ScrollToTop.jsx / .css
+│   │   ├── Navbar.jsx
+│   │   ├── Hero.jsx
+│   │   ├── About.jsx
+│   │   ├── Skills.jsx
+│   │   ├── Projects.jsx
+│   │   ├── Education.jsx
+│   │   ├── Certifications.jsx
+│   │   ├── Contact.jsx
+│   │   ├── Footer.jsx
+│   │   └── ScrollToTop.jsx
+│   │
 │   ├── data/
-│   │   └── portfolioData.js       ← All personal content
+│   │   └── portfolioData.js
+│   │
 │   ├── App.jsx
 │   ├── main.jsx
-│   └── index.css                  ← Global styles
+│   └── index.css
+│
 ├── index.html
 ├── package.json
 ├── vite.config.js
-├── vercel.json                    ← Vercel deployment config
+├── vercel.json
 └── README.md
 ```
 
 ---
 
-## Installation
+## ⚙️ Installation
+
+Clone the repository:
 
 ```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/FUTURE_FS_01.git
+git clone https://github.com/PalakRawat14/FUTURE_FS_01.git
+```
 
-# Navigate to the project directory
+Navigate to the project folder:
+
+```bash
 cd FUTURE_FS_01
+```
 
-# Install dependencies
+Install dependencies:
+
+```bash
 npm install
 ```
 
-## How to Run Locally
+---
+
+## ▶️ Run Locally
 
 ```bash
 npm run dev
 ```
 
-Open [http://localhost:5173](http://localhost:5173) in your browser.
+Open your browser and visit:
 
-### Build for Production
+```text
+http://localhost:5173
+```
+
+---
+
+## 🏗 Build for Production
 
 ```bash
 npm run build
 ```
 
-The output will be in the `dist/` folder.
+---
 
-### Preview Production Build
+## 👀 Preview Production Build
 
 ```bash
 npm run preview
+```
 
 ---
 
-## Screenshots
+## 📬 Contact
 
-<!-- Add screenshots here once deployed -->
+**Palak Rawat**
 
-| Section | Preview |
-|---|---|
-| Hero | _screenshot_ |
-| About | _screenshot_ |
-| Skills | _screenshot_ |
-| Projects | _screenshot_ |
-| Education | _screenshot_ |
-| Certifications | _screenshot_ |
-| Contact | _screenshot_ |
+📧 Email: [rawatpalak140@gmail.com](mailto:rawatpalak140@gmail.com)
 
----
+🐙 GitHub: https://github.com/PalakRawat14
 
-## Links
+💼 LinkedIn: https://www.linkedin.com/in/palak-rawat-517903287/
 
-- **Live Demo:** [https://future-fs-01-three-orpin.vercel.app/]
-
----
-
-## Author
-
-**Palak Rawat**  
-Full-Stack Developer & B.Tech CSE Student  
-Email: rawatpalak140@gmail.com  
-GitHub: [https://github.com/PalakRawat14](https://github.com/PalakRawat14)  
-LinkedIn: [https://www.linkedin.com/in/palak-rawat-517903287/](https://www.linkedin.com/in/palak-rawat-517903287/)
