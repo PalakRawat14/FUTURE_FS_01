@@ -113,26 +113,6 @@ The output will be in the `dist/` folder.
 
 ```bash
 npm run preview
-```
-
----
-
-## Deployment
-
-### Deploy on Vercel (Recommended)
-
-1. Push the repository to GitHub.
-2. Go to [vercel.com](https://vercel.com) and import the repository.
-3. Vercel will auto-detect Vite as the framework.
-4. Click **Deploy** — no additional configuration needed.
-
-### Deploy on Netlify
-
-1. Push the repository to GitHub.
-2. Go to [netlify.com](https://netlify.com) and import the repository.
-3. Set build command: `npm run build`
-4. Set publish directory: `dist`
-5. Click **Deploy**.
 
 ---
 
@@ -154,20 +134,7 @@ npm run preview
 
 ## Links
 
-- **Live Demo:** [`https://your-live-demo-url.vercel.app`](https://your-live-demo-url.vercel.app) <!-- Update this -->
-- **GitHub Repository:** [`https://github.com/PalakRawat14/FUTURE_FS_01`](https://github.com/PalakRawat14/FUTURE_FS_01) <!-- Update this if different -->
-
----
-
-## Final Submission Checklist
-
-- [ ] GitHub repository is public
-- [ ] Repository name is **FUTURE_FS_01**
-- [ ] Resume file (`Palak_Rawat_Resume.pdf`) added to the `public/` folder
-- [ ] Live deployed link added to README and portfolio (update `portfolioData.js` if needed)
-- [ ] LinkedIn and GitHub profile links updated in `src/data/portfolioData.js`
-- [ ] Screenshots added to README
-- [ ] Project submitted through the official internship portal
+- **Live Demo:** [https://future-fs-01-three-orpin.vercel.app/]
 
 ---
 
